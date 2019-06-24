@@ -1,5 +1,5 @@
 class Solution(object):
-    def totalNQueens(self, n):
+    def solveNQueens(self, n):
         """
         :type n: int
         :rtype: List[List[str]]
@@ -11,7 +11,6 @@ class Solution(object):
         row = 0
         self.arrangeQueens(result, row, matrix)
         return len(result)
-
 
     def arrangeQueens(self, result, row, matrix):
         n = len(matrix)
@@ -58,8 +57,3 @@ if __name__ == '__main__':
     solution = Solution()
     result = solution.solveNQueens(4)
     print(result)
-
-
-
-
-
