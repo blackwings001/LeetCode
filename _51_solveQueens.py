@@ -56,7 +56,7 @@ class Solution(object):
 
 if __name__ == '__main__':
     solution = Solution()
-    result = solution.solveNQueens(4)
+    result = solution.totalNQueens(4)
     print(result)
 
 
