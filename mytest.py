@@ -22,3 +22,8 @@ for i in range(6, -1, -1):
 s = " "
 if s != " ":
     print("s存在")
+
+
+a = [2,3,1,5,7,8]
+a.pop(3)
+print(a)
