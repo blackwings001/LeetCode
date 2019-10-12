@@ -15,7 +15,8 @@ for i in range(5):
     print(b)
     b.pop(i)
     print(b)
-print(1)
+
+print(2)
 
 
 for i in range(6, -1, -1):
