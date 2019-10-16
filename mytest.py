@@ -1,3 +1,3 @@
 a = ["home", "a"]
-res = "/".join(a)
-print(res)
+print(a.append("b"))
+print(a)
