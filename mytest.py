@@ -1,3 +1,6 @@
 a = ["home", "a"]
-print(a.append("b"))
-print(a)
+
+
+i, j = 5, 5
+
+print(a[:])
