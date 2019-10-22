@@ -1,6 +1,4 @@
-a = ["home", "a"]
-
-
-i, j = 5, 5
-
-print(a[:])
+a = [1]
+b = set()
+b.add(a)
+print(b)
