@@ -26,7 +26,14 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    nums = [4,4,1,4]
+    nums = list(range(10)) + [1 for _ in range(100)]
     res = Solution().subsetsWithDup(nums)
+    print(res)
+    print(len(res))
+
+    res = 1
+    for i in range(1, 11):
+        res *= i
+
     print(res)
 

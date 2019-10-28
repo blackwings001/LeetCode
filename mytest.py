@@ -1,4 +1,2 @@
-a = [1]
-b = set()
-b.add(a)
-print(b)
+a = "a"
+print(a[:0])
