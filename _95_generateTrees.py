@@ -15,20 +15,6 @@ class Solution(object):
         if n == 0:
             return res
 
-        def level(root):
-            res = []
-            stack = []
-
-            stack.append(root)
-            while stack:
-                ele = stack.pop(0)
-                if ele:
-                    res.append(ele.val)
-                    stack.append(ele.left)
-                    stack.append(ele.right)
-
-            print(res)
-
         def tree(nodes):
             if not nodes:
                 return [None]
@@ -37,18 +23,16 @@ class Solution(object):
 
             tmp = []
             for i in range(len(nodes)):
-                root = nodes[i]
                 left = tree(nodes[:i])
                 right = tree(nodes[i+1:])
                 for l in left:
                     for r in right:
+                        root = TreeNode(nodes[i].val)  # 每次使用一个新的节点，不要使用nodes中的节点，nodes中节点会改变
                         root.left = l
                         root.right = r
                         tmp.append(root)
-            for i in tmp:
-                level(i)
-            return tmp
 
+            return tmp
 
         nodes = [TreeNode(i + 1) for i in range(n)]
         res = tree(nodes)
@@ -57,8 +41,9 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    n = 3
+    n = 4
     res = Solution().generateTrees(n)
+    print(res)
 
     def level(root):
         res = []
@@ -69,8 +54,11 @@ if __name__ == '__main__':
             ele = stack.pop(0)
             if ele:
                 res.append(ele.val)
-                stack.append(ele.left)
-                stack.append(ele.right)
+                if ele.left or ele.right:
+                    stack.append(ele.left)
+                    stack.append(ele.right)
+            else:
+                res.append("null")
 
         print(res)
 

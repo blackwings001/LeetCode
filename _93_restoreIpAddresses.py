@@ -32,3 +32,8 @@ class Solution(object):
                         res.append(ip)
 
         return res
+
+if __name__ == '__main__':
+	s = "25525511135"
+	res = Solution().restoreIpAddresses(s)
+	print(res)
