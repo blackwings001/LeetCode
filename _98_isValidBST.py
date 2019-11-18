@@ -11,9 +11,22 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        if not root:
-            return True
-        elif (not root.left or root.left.val < root.val) and (not root.right or root.right.val > root.val):
-            return self.isValidBST(root.left) and self.isValidBST(root.right)
-        else:
-            return False
+        res = []
+        stack = []
+        p = root
+
+        while p or stack:
+            while p:
+                stack.append(p)
+                p = p.left
+            if stack:
+                p = stack.pop()
+                res.append(p.val)
+                p = p.right
+
+        for i in range(len(res) - 1):
+            if res[i + 1] <= res[i]:
+                return False
+
+        return True
+
