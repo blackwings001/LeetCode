@@ -1,2 +1,3 @@
-a = "a"
-print(a[:0])
+a = []
+if a:
+	print("a")
