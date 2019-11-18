@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b1189a-cf8c-4e58-ba60-394fc83cfb5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_96_numTress.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_97_isInterleave.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_99_recoverTree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_98_isValidBST.py" beforeDir="false" afterPath="$PROJECT_DIR$/_98_isValidBST.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +31,12 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/1-50" />
+      <recent name="$PROJECT_DIR$/51-100" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -62,7 +62,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/51-100/_94_inorderTraversal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-50/_94_inorderTraversal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +83,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/51-100/_95_generateTrees.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-50/_95_generateTrees.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +104,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/51-100/_96_numTress.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-50/_96_numTress.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +125,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/51-100/_97_isInterleave.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-50/_97_isInterleave.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,7 +183,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -193,52 +195,52 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_76_minWindow.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_76_minWindow.py</url>
           <line>43</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_81_search.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_81_search.py</url>
           <line>16</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_82_deleteDuplicates.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_82_deleteDuplicates.py</url>
           <line>41</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_84_largestRectangleArea.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_84_largestRectangleArea.py</url>
           <line>29</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_89_grayCode.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_89_grayCode.py</url>
           <line>25</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_90_subsetsWithDup.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_90_subsetsWithDup.py</url>
           <line>28</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_85_maximalRectangle.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_85_maximalRectangle.py</url>
           <line>35</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_91_numDecodings.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_91_numDecodings.py</url>
           <line>25</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_94_inorderTraversal.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_94_inorderTraversal.py</url>
           <line>48</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_95_generateTrees.py</url>
+          <url>file://$PROJECT_DIR$/1-100/_95_generateTrees.py</url>
           <line>37</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
