@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b1189a-cf8c-4e58-ba60-394fc83cfb5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/101-200/_101_isSymmetric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/101-200/_102_levelOrder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/101-200/_103_zigzagLevelOrder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/101-200/_104_maxDepth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
