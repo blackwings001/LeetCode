@@ -13,7 +13,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1 if not root else 0
+        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1 if root else 0
 
 
 if __name__ == '__main__':
