@@ -5,7 +5,9 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
+
     def zigzagLevelOrder(self, root):
         """
         :type root: TreeNode
@@ -15,28 +17,32 @@ class Solution(object):
         if not root:
             return res
 
-        queue = [(root, 0, "right")]  # "right"记录的是下一层的遍历方向
-        while queue:
-            ele = queue.pop(0)
-            node = ele[0]
-            level = ele[1]
-            direction = ele[2]
+        odd_stack = [root]
+        even_stack = []
 
-            if len(res) == level + 1:
-                res[level].append(node.val)
-            else:
-                res.append([node.val])
-            if direction == "right":
-                if node.right:
-                    queue.append((node.right, level + 1, "left"))
-                if node.left:
-                    queue.append((node.left, level + 1, "left"))
-            elif direction == "left":
-                if node.left:
-                    queue.append((node.left, level + 1, "right"))
-                if node.right:
-                    queue.append((node.right, level + 1, "right"))
+        while odd_stack or even_stack:
+            tmp = []
+            while odd_stack:
+                ele = odd_stack.pop()
+                if ele:
+                    tmp.append(ele.val)
+                    even_stack.append(ele.left)
+                    even_stack.append(ele.right)
+            if tmp:
+                res.append(tmp)
+
+            tmp = []
+            while even_stack:
+                ele = even_stack.pop()
+                if ele:
+                    tmp.append(ele.val)
+                    odd_stack.append(ele.right)
+                    odd_stack.append(ele.left)
+            if tmp:
+                res.append(tmp)
+
         return res
+
 
 if __name__ == '__main__':
     root = TreeNode(3)
