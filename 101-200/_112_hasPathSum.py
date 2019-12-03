@@ -14,7 +14,10 @@ class Solution(object):
         :rtype: bool
         """
         if not root:
-            return True if sum == 0 else False
+            return False
+
+        if not root.right and not root.left:
+            return True if sum - root.val == 0 else False
 
         return (self.hasPathSum(root.left, sum - root.val)) or (self.hasPathSum(root.right, sum - root.val))
 

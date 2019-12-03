@@ -13,6 +13,9 @@ class Solution(object):
         :type sum: int
         :rtype: List[List[int]]
         """
+        if not root:
+            return []
+
         res = []
         cur = []
 
