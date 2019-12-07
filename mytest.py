@@ -1,7 +1,2 @@
-a = set("abc")
+a = set(range(5))
 print(a)
-
-b = a.copy()
-b.remove("a")
-print(a)
-print(b)
