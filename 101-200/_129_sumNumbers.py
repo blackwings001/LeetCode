@@ -15,25 +15,24 @@ class Solution(object):
         if not root:
             return 0
 
-        def path_number(node, pre_path, res):
+        def path_number(node, pre_path):
             if not node:
                 return
 
             cur_path = pre_path + str(node.val)
             if not node.left and not node.right:
-                res.append(cur_path)
+                nonlocal res
+                res += int(cur_path)
+                # print(res)
                 return
 
-            path_number(node.left, cur_path, res)
-            path_number(node.right, cur_path, res)
+            path_number(node.left, cur_path)
+            path_number(node.right, cur_path)
 
-        res = []
-        path_number(root, "", res)
+        res = 0
+        path_number(root, "")
 
-        res = [int(i) for i in res]
-        print(res)
-
-        return sum(res)
+        return res
 
 
 
