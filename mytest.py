@@ -1,22 +1,7 @@
-class Solution:
-    def minCut(self, s: str) -> int:
-        min_cut = list(range(len(s)))
-        n = len(s)
-        dp = [[False] * n for _ in range(n)]
-        for j in range(n):
-            for i in range(j+1):
-                if s[i] == s[j] and (j - i < 2 or dp[i + 1][j - 1]):
-                    dp[i][j] = True
-                    if i == 0:
-                        min_cut[j] = 0
-                    else:
-                        min_cut[j] = min(min_cut[j], min_cut[i - 1] + 1)
+from queue import Queue
 
-        for i in dp:
-            print(i)
-        return min_cut[-1]
-
-if __name__ == '__main__':
-	s = "abcddcbe"
-	res = Solution().minCut(s)
-	print(res)
+q = Queue()
+q.put(1)
+print(q.qsize())
+e = q.get()
+print(q.qsize())

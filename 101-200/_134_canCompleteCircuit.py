@@ -5,7 +5,7 @@ class Solution(object):
         :type cost: List[int]
         :rtype: int
         """
-        if not gas or not cost or (len(gas) != len(cost)):
+        if not gas or not cost or (len(gas) != len(cost)) or sum(gas) < sum(cost):
             return -1
 
         start = 0
