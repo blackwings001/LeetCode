@@ -1,7 +1,3 @@
-from queue import Queue
-
-q = Queue()
-q.put(1)
-print(q.qsize())
-e = q.get()
-print(q.qsize())
+stack = [1,2,3]
+stack.append(stack.pop() + stack.pop())
+print(stack)
