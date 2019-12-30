@@ -5,3 +5,25 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        if not numbers:
+            return []
+
+        start = 0
+        end = len(numbers) - 1
+
+        while end > start:
+            if numbers[start] + numbers[end] > target:
+                end -= 1
+            elif numbers[start] + numbers[end] < target:
+                start += 1
+            else:
+                return [start, end]
+
+        return []
+
+
+if __name__ == '__main__':
+    numbers = [2, 7, 9, 11]
+    target = 11
+    res = Solution().twoSum(numbers, target)
+    print(res)
