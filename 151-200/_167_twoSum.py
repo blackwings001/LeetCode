@@ -17,13 +17,13 @@ class Solution(object):
             elif numbers[start] + numbers[end] < target:
                 start += 1
             else:
-                return [start, end]
+                return [start + 1, end + 1]
 
         return []
 
 
 if __name__ == '__main__':
     numbers = [2, 7, 9, 11]
-    target = 11
+    target = 9
     res = Solution().twoSum(numbers, target)
     print(res)

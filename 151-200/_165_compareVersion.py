@@ -25,5 +25,7 @@ class Solution(object):
 if __name__ == '__main__':
     version1 = "1.001"
     version2 = "1.1"
+    print(1)
+    print(2)
     res = Solution().compareVersion(version1, version2)
     print(res)

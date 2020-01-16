@@ -1,1 +1,2 @@
-print(int("001"))
+print(1)
+print(2)

@@ -22,7 +22,6 @@ class Solution(object):
         return major
 
 
-
 if __name__ == '__main__':
     nums = [1,2,2,3,5,1,2,2,2]
     res = Solution().majorityElement(nums)
